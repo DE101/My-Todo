@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <TodoList ItemList = {todos} />
-      <input type='text' placeholder='New Todo'></input>
+      <input ref={newTodoText} type='text' placeholder='New Todo'></input>
       <button onClick={handleSave}>Save Todo</button>
     </div>
   );
