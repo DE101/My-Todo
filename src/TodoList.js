@@ -5,7 +5,9 @@ function Todolist ({ItemList}) {
     return (
         <ul>
             {ItemList.map((todo,index) => (
-                <li key={index}> {todo}</li>
+                <li className={todo.done ? "done" : ""} key={index}> 
+                <input type="checkbox" /> 
+                {todo.todoText}</li>
             ))}
         </ul>
     );
