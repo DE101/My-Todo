@@ -2,6 +2,7 @@ li {
   list-style: none;
 }
 .container {
+  margin: 4px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;

@@ -10,7 +10,7 @@ function App() {
   function handleSave() {
     const todoText = newTodoText.current.value
     if (todoText === "") return;
-    const newTodo = [...todos,{ todoText, done: false}];
+    const newTodo = [...todos,{ todoText, done: true}];
     setTodos(newTodo);
 
   }
