@@ -8,14 +8,15 @@ function App() {
   const newTodoText = useRef();
 
   function handleSave() {
-    if (newTodoText.current.value === "") return;
-    const newTodo = [...todos,newTodoText.current.value];
+    const todoText = newTodoText.current.value
+    if (todoText === "") return;
+    const newTodo = [...todos,{ todoText, done: false}];
     setTodos(newTodo);
 
   }
 
   return (
-    <div>
+    <div className='container'>
       <TodoList ItemList = {todos} />
       <input ref={newTodoText} type='text' placeholder='New Todo'></input>
       <button onClick={handleSave}>Save Todo</button>
