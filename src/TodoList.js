@@ -6,7 +6,7 @@ function Todolist ({ItemList, toggleTodo}) {
     return (
         <ul>
             {ItemList.map((todo,index) => (
-            <Todo item={todo} key={index} toggle={toggleTodo} />
+            <Todo item={todo} iterationKey={index} toggle={toggleTodo} />
             ))}
         </ul>
     );
