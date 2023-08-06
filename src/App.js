@@ -10,14 +10,21 @@ function App() {
   function handleSave() {
     const todoText = newTodoText.current.value
     if (todoText === "") return;
-    const newTodo = [...todos,{ todoText, done: true}];
+    const newTodo = [...todos,{ todoText, done: false}];
     setTodos(newTodo);
 
   }
 
+  function handleToggle(index) {
+    console.log(index);
+    const newTodos = [...todos];
+    newTodos[index].done = !newTodos[index].done;
+    setTodos(newTodos);
+  }
+
   return (
     <div className='container'>
-      <TodoList ItemList = {todos} />
+      <TodoList ItemList = {todos} toggleTodo = {handleToggle} />
       <input ref={newTodoText} type='text' placeholder='New Todo'></input>
       <button onClick={handleSave}>Save Todo</button>
     </div>

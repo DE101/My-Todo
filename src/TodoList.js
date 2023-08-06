@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
+import Todo from "./Todo";
 
-function Todolist ({ItemList}) {
+function Todolist ({ItemList, toggleTodo}) {
     return (
         <ul>
             {ItemList.map((todo,index) => (
-                <li className={todo.done ? "done" : ""} key={index}> 
-                <input type="checkbox" /> 
-                {todo.todoText}</li>
+            <Todo item={todo} key={index} toggle={toggleTodo} />
             ))}
         </ul>
     );
