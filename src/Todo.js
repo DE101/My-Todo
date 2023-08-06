@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
 
 function Todo ({ item, iterationKey, toggle}) {
     return (
@@ -8,9 +8,9 @@ function Todo ({ item, iterationKey, toggle}) {
                 key={iterationKey}
                  type="checkbox" 
                  onChange={() => {
-                    toggle(iterationKey)
+                    toggle(iterationKey);
                 }} /> 
-                {item.todoText}
+                {item.todoText};
                 </li>
             );
 }
