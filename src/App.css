@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  background-color: #333;
+  background-color: #ffffff;
 }
 
 input {
@@ -81,8 +81,8 @@ button:active {
 
 .right-side-nav {
   height: 100vh;
-  width: var(--nav-wide-width);
-  border-right: 1px solid #e4e4e4;
+  width: var(--sidebar-right-width);
+  border-left: 1px solid #e4e4e4;
   padding: 24px 0px;
 }
 
