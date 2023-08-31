@@ -5,8 +5,8 @@
 
 
 :root {
-  --nav-wide-width: 235px;
-  --sidebar-right-width: 235px;
+  --nav-wide-width: 180px;
+  --sidebar-right-width: 180px;
   --main-section-width: calc(
     100% - var(--nav-wide-width) - var(--sidebar-right-width)
   );
