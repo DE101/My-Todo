@@ -86,3 +86,18 @@ button:active {
   color: white;
   background-color: #709cda;
 }
+
+
+.right-side-nav {
+  height: 100vh;
+  width: var(--nav-wide-width);
+  border-right: 1px solid #e4e4e4;
+  padding: 24px 0px;
+}
+
+.left-side-nav {
+  height: 100vh;
+  width: var(--nav-wide-width);
+  border-right: 1px solid #e4e4e4;
+  padding: 24px 0px;
+}
