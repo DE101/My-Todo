@@ -28,6 +28,8 @@ function App() {
         <input ref={newTodoText} type="text" placeholder="New Todo"></input>
         <button onClick={handleSave}>Save Todo</button>
       </div>
+      <div className="left-side-nav"></div>
+      <div className="right-side-nav"></div>
     </div>
   );
 }
