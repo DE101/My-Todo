@@ -3,6 +3,15 @@
   margin: 0;
 }
 
+
+:root {
+  --nav-wide-width: 235px;
+  --sidebar-right-width: 235px;
+  --main-section-width: calc(
+    100% - var(--nav-wide-width) - var(--sidebar-right-width)
+  );
+}
+
 body {
   margin: 0;
   background-color: #333;
