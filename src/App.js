@@ -1,6 +1,6 @@
-import './App.css';
-import React, { useState, useRef } from 'react';
-import TodoList from './TodoList';
+import "./App.css";
+import React, { useState, useRef } from "react";
+import TodoList from "./TodoList";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -8,11 +8,10 @@ function App() {
   const newTodoText = useRef();
 
   function handleSave() {
-    const todoText = newTodoText.current.value
+    const todoText = newTodoText.current.value;
     if (todoText === "") return;
-    const newTodo = [...todos,{ todoText, done: false}];
+    const newTodo = [...todos, { todoText, done: false }];
     setTodos(newTodo);
-
   }
 
   function handleToggle(index) {
@@ -23,10 +22,12 @@ function App() {
   }
 
   return (
-    <div className='container'>
-      <TodoList ItemList = {todos} toggleTodo = {handleToggle} />
-      <input ref={newTodoText} type='text' placeholder='New Todo'></input>
-      <button onClick={handleSave}>Save Todo</button>
+    <div className="container">
+      <div className="main-container">
+        <TodoList ItemList={todos} toggleTodo={handleToggle} />
+        <input ref={newTodoText} type="text" placeholder="New Todo"></input>
+        <button onClick={handleSave}>Save Todo</button>
+      </div>
     </div>
   );
 }

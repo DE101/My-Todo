@@ -30,6 +30,13 @@ li {
   list-style: none;
 }
 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.main-container {
+  width: var(--main-section-width);
   margin: 4px;
   display: flex;
   flex-direction: column-reverse;
