@@ -95,6 +95,8 @@ button:active {
 .small-screen {
   display: none;
 }
-@media (max-width: 450px) {
-  
+@media (max-width: 910px) {
+  .big-screen {
+    display: none;
+  }
 }
