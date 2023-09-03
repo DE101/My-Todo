@@ -28,6 +28,7 @@ function App() {
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
         <input ref={newTodoText} type="text" placeholder="New Todo"></input>
         <button onClick={handleSave}>Save Todo</button>
+        <button onClick={handleSave}>Save Todo</button>
       </div>
       <div className="right-side-nav"></div>
     </div>
