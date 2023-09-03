@@ -93,6 +93,6 @@ button:active {
   padding: 24px 0px;
 }
 
-.header {
+@media (max-width: 450px) {
   
 }
