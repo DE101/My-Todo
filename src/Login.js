@@ -1,6 +1,6 @@
 export default function Login() {
     return (
-        <div>
+        <div className="Login-form"> 
             <form>
                 <div>
                     <label>username:</label> <input type="text" required placeholder="username"/>
