@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -27,10 +28,18 @@ function App() {
       <div className="main-container">
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
         <input ref={newTodoText} type="text" placeholder="New Todo"></input>
-        <button className="big-screen" onClick={handleSave}>Save Todo</button>
-        <button className="small-screen" onClick={handleSave}>+</button>
+        <button className="big-screen" onClick={handleSave}>
+          Save Todo
+        </button>
+        <button className="small-screen" onClick={handleSave}>
+          +
+        </button>
       </div>
       <div className="right-side-nav"></div>
+      <Routes>
+        <Route></Route>
+        <Route></Route>
+      </Routes>
     </div>
   );
 }
