@@ -37,8 +37,8 @@ function App() {
       </div>
       <div className="right-side-nav"></div>
       <Routes>
-        <Route></Route>
-        <Route></Route>
+        <Route path="/"></Route>
+        <Route path="/Myday"></Route>
       </Routes>
     </div>
   );
