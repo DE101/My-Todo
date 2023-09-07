@@ -40,6 +40,7 @@ function App() {
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
         <Route path="/UserProfile"></Route>
+        <Route path="/SignUp"></Route>
       </Routes>
     </div>
   );
