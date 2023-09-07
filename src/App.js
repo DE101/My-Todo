@@ -41,6 +41,7 @@ function App() {
         <Route path="/Myday"></Route>
         <Route path="/UserProfile"></Route>
         <Route path="/SignUp"></Route>
+        <Route path="/Calendar"></Route>
       </Routes>
     </div>
   );
