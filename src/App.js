@@ -42,6 +42,7 @@ function App() {
         <Route path="/UserProfile"></Route>
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
+        <Route path="/Settings"></Route>
       </Routes>
     </div>
   );
