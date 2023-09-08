@@ -43,6 +43,7 @@ function App() {
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
+        <Route path="/Assigned"></Route>
       </Routes>
     </div>
   );
