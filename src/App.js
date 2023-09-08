@@ -44,6 +44,7 @@ function App() {
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
         <Route path="/Assigned"></Route>
+        <Route path="/Important"></Route>
       </Routes>
     </div>
   );
