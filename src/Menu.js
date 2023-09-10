@@ -1,5 +1,5 @@
 export default function Menu() {
     return (
-        <h1>My day</h1>
+        <h1>My dgvgvvgay</h1>
     )
 }
