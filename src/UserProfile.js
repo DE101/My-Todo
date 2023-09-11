@@ -7,7 +7,7 @@ export default function UserProfile() {
             <div>
                 <label>User Name:</label>
                 <label>User Email:</label>
-                <label>User Number:</label>
+                <label>Userfff Number:</label>
             </div>
             <div>
                 <span></span>
