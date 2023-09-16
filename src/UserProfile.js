@@ -5,7 +5,7 @@ export default function UserProfile() {
                 <img src="./logo.svg" alt="profile-pic"/>
             </div>
             <div>
-                <label>Userdtrrf Name:</label>
+                <label>User Name:</label>
                 <label>User Email:</label>
                 <label>User Number:</label>
             </div>
