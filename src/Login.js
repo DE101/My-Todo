@@ -9,7 +9,7 @@ export default function Login() {
                     <label>username:</label> <input type="password" required placeholder="password"/>
                 </div>
                 <div>
-                    <button>Log In</button>
+                    <button>Log bIn</button>
                 </div>
             </form>
         </div>
