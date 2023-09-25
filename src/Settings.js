@@ -6,7 +6,12 @@ export default function Settings() {
         <p>Wallpaper</p>
         <p>Font size</p>
       </div>
+      <div className="notificationSettings">
+        <h3>Display</h3>
+        <p>Wallpaper</p>
+        <p>Font size</p>
+      </div>
       <div></div>
     </div>
-  );
+  ); 
 }
