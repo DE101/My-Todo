@@ -7,7 +7,7 @@ export default function Settings() {
         <p>Font size</p>
       </div>
       <div className="notificationSettings">
-        <h3>Display</h3>
+        <h3>alert sound</h3>
         <p>Wallpaper</p>
         <p>Font size</p>
       </div>
