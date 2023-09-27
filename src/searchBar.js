@@ -2,7 +2,7 @@ export default function searchBar() {
     return(
         <div>
             <input type="text" placeholder="search here" />
-            <input></input>
+            <input type="b"/>
         </div>
     )
 };
