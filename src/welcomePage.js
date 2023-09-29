@@ -1,7 +1,7 @@
 export default function welcomePage() {
     return (
         <div>
-            <p></p>
+            <p>Welcome to our app</p>
         </div>
     )
 };
