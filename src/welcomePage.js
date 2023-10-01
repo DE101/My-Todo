@@ -2,7 +2,7 @@ export default function welcomePage() {
     return (
         <div>
             <h1>Welcome</h1>
-            <p>Welcome to our app</p>
+            <p>Welcome to the myToDo community</p>
             <p>Welcome to our app</p>
         </div>
     )
