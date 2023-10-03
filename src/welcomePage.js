@@ -1,6 +1,6 @@
 export default function welcomePage() {
     return (
-        <div>
+        <div className="welcomePage">
             <h1>Welcome</h1>
             <p>Welcome to the myToDo community</p>
             <p>Welcome to our app, please login to continue tracking your daily activities</p>
