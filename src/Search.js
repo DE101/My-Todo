@@ -22,7 +22,7 @@ export default function searchBar() {
             <input type="text" placeholder="search task here" onChange={e => setQuery(e.target.value)}/>
             <input type="button"/>
             <ul>
-                {filteredItems.map( value => <h1 key = {value.name}>{value.name}</h1>)}
+                {filteredItems.map(value => <h1 key = {value.name}>{value.name}</h1>)}
             </ul>
         </div>
     )
