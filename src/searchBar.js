@@ -1,10 +1,14 @@
-import React from "react";
+import {useState} from "react";
 
 
 export default function searchBar() {
+    const [query, setQuery] = useState;
+constS
+
     return(
         <div>
-            <input type="text" placeholder="search task here" />
+            <label>Search:</label>
+            <input type="text" placeholder="search task here" onChange={e => setQuery(e.target.value)}/>
             <input type="button"/>
         </div>
     )
