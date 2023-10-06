@@ -1,6 +1,14 @@
 import {useState} from "react";
 import {itemList} from "TodoList";
 
+
+const getFilteredItems = (query, items) => {
+    if (!query) {
+        return items;
+    }
+    return items.filter(song => song.name.includes(query))
+}
+
 export default function searchBar() {
     const [query, setQuery] = useState;
     
