@@ -6,7 +6,7 @@ const getFilteredItems = (query, items) => {
     if (!query) {
         return items;
     }
-    return items.filter(song => song.name.includes(query))
+    return items.filter(toDoItem => toDoItem.name.includes(query))
 }
 
 export default function searchBar() {
@@ -19,6 +19,9 @@ export default function searchBar() {
             <label>Search:</label>
             <input type="text" placeholder="search task here" onChange={e => setQuery(e.target.value)}/>
             <input type="button"/>
+            <ul>
+                
+            </ul>
         </div>
     )
 };
