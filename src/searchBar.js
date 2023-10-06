@@ -14,13 +14,15 @@ export default function searchBar() {
     
     const {items} = itemList;
 
+    const filteredItems = getFilteredItems(items, query)
+
     return(
         <div>
             <label>Search:</label>
             <input type="text" placeholder="search task here" onChange={e => setQuery(e.target.value)}/>
             <input type="button"/>
             <ul>
-                
+
             </ul>
         </div>
     )
