@@ -1,9 +1,10 @@
 import {useState} from "react";
-
+import {itemList} from "TodoList";
 
 export default function searchBar() {
     const [query, setQuery] = useState;
-constS
+    
+    const {items} = itemList;
 
     return(
         <div>
