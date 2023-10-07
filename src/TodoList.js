@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Todo from "./Todo";
 
-function Todolist ({ItemList, toggleTodo}) {
+function TodoList ({ItemList, toggleTodo}) {
     return (
         <ul>
             {ItemList.map((todo,index) => (
@@ -12,4 +12,4 @@ function Todolist ({ItemList, toggleTodo}) {
     );
 }
 
-export default Todolist;
+export default TodoList;
