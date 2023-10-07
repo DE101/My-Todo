@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
 import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
-
+import UserProfile from "./UserProfile";
 
 
 
@@ -44,7 +44,7 @@ function App() {
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
-        <Route path="/UserProfile"></Route>
+        <Route path="/UserProfile"><UserProfile></UserProfile></Route>
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
