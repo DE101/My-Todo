@@ -3,9 +3,7 @@ import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
 import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
-import UserProfile from "./UserProfile";
-
-
+import Menu from "./Menu";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -28,7 +26,12 @@ function App() {
 
   return (
     <div className="container">
-      <div className="left-side-nav"></div>
+      <div className="left-side-nav">
+        <Menu text="Home" icon="home"></Menu>
+        <Menu text="Search" icon="search"></Menu>
+        <Menu text="Explore" icon="explore"></Menu>
+        <Menu text="Reels" icon="movie"></Menu>
+      </div>
       <div className="main-container">
         <SearchBar></SearchBar>
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
@@ -44,7 +47,7 @@ function App() {
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
-        <Route path="/UserProfile"><UserProfile></UserProfile></Route>
+        <Route path="/UserProfile"></Route>
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
