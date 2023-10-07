@@ -1,5 +1,9 @@
-export default function Menu() {
+import './App.css';
+export default function Menu(props) {
     return (
-        <h1>My dgvgvvgay</h1>
+        <div className="nav-item">
+            <span className="material-symbols-outlined icon">{props.icon}</span>
+            <span className="nav-text">{props.text}</span>
+        </div>
     )
 }
