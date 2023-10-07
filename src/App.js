@@ -27,10 +27,10 @@ function App() {
   return (
     <div className="container">
       <div className="left-side-nav">
-        <Menu text="Home" icon="home"></Menu>
-        <Menu text="Search" icon="search"></Menu>
-        <Menu text="Explore" icon="explore"></Menu>
-        <Menu text="Reels" icon="movie"></Menu>
+        <Menu text="User Profile" icon="profile"></Menu>
+        <Menu text="My Day" icon="sun"></Menu>
+        <Menu text="Important" icon="graph"></Menu>
+        <Menu text="Others" icon="people"></Menu>
       </div>
       <div className="main-container">
         <SearchBar></SearchBar>
