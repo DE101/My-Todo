@@ -1,7 +1,7 @@
 export default function UserProfile() {
     return (
         <div>
-            <div>
+            <div className="profile-pic">
                 <img src="./logo.svg" alt="profile-pic"/>
             </div>
             <div>
