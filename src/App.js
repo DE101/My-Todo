@@ -4,6 +4,8 @@ import TodoList from "./TodoList";
 import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
+import { UserProfile } from "./UserProfile";
+
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -47,7 +49,7 @@ function App() {
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
-        <Route path="/UserProfile"></Route>
+        <Route path="/UserProfile" Component={UserProfile}></Route>
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
