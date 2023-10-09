@@ -1,4 +1,4 @@
-export default function UserProfile() {
+export default function UserProfile () {
     return (
         <div>
             <div className="profile-pic">
