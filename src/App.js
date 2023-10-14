@@ -4,7 +4,7 @@ import TodoList from "./TodoList";
 import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
-import { UserProfile } from "./UserProfile";
+// import { UserProfile } from "./UserProfile";
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       <div className="left-side-nav">
         <Menu text="User Profile" icon="profile"></Menu>
         <Menu text="My Day" icon="sun"></Menu>
+        <Menu text="All" icon="pile"></Menu>
         <Menu text="Important" icon="graph"></Menu>
         <Menu text="Others" icon="people"></Menu>
       </div>
@@ -49,7 +50,7 @@ function App() {
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
-        <Route path="/UserProfile" Component={UserProfile}></Route>
+        {/* <Route path="/UserProfile" Component={UserProfile}></Route> */}
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
