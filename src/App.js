@@ -4,6 +4,7 @@ import TodoList from "./TodoList";
 import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
+import Details from "./Details";
 // import { UserProfile } from "./UserProfile";
 
 
@@ -46,7 +47,9 @@ function App() {
           +
         </button>
       </div>
-      <div className="right-side-nav"></div>
+      <div className="right-side-nav">
+        <Details></Details>
+      </div>
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
