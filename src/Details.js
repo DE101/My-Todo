@@ -1,1 +1,3 @@
-expo
+export default function {
+    
+}
