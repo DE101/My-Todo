@@ -48,7 +48,7 @@ function App() {
         </button>
       </div>
       <div className="right-side-nav">
-        <Details text="todo" ></Details>
+        <Details text="todo" icon="task"></Details>
       </div>
       <Routes>
         <Route path="/"></Route>
