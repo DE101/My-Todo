@@ -49,6 +49,7 @@ function App() {
       </div>
       <div className="right-side-nav">
         <Details text="todo" icon="task"></Details>
+        <Details text="time" icon="clock"></Details>
       </div>
       <Routes>
         <Route path="/"></Route>
