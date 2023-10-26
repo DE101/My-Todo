@@ -52,6 +52,7 @@ function App() {
         <Details text="time" icon="clock"></Details>
         <Details text="assigned" icon="graph"></Details>
         <Details text="todo" icon="task"></Details>
+        <Details text="todo" icon="task"></Details>
       </div>
       <Routes>
         <Route path="/"></Route>
