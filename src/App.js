@@ -53,9 +53,7 @@ function App() {
         <Details text="assigned" icon="graph"></Details>
         <Details text="todo" icon="task"></Details>
         <Details text="todo" icon="task"></Details>
-        <Details text="todo" icon="task"></Details>
-        <Details text="todo" icon="task"></Details>
-        <Details text="todo" icon="task"></Details>
+
 
       </div>
       <Routes>
