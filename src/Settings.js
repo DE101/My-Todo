@@ -10,9 +10,6 @@ export default function Settings() {
         <h3>alert sound</h3>
         <p>pop up</p>
         <p>Font size</p>
-        <h3>alert sound</h3>
-        <p>pop up</p>
-        <p>Font size</p>
       </div>
       <div></div>
     </div>
