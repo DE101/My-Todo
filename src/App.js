@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
+import Settings from "./Settings";
 // import { UserProfile } from "./UserProfile";
 
 
@@ -46,6 +47,7 @@ function App() {
         <button className="small-screen" onClick={handleSave}>
           +
         </button>
+        <Settings></Settings>
       </div>
       <div className="right-side-nav">
         <Details text="todo" icon="task"></Details>
