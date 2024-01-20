@@ -32,6 +32,7 @@ function App() {
     <div className="container">
       <div className="left-side-nav">
         <Menu text="User Profile" icon="profile"></Menu>
+        <Menu text="Home" icon="house"></Menu>
         <Menu text="My Day" icon="sun"></Menu>
         <Menu text="All" icon="pile"></Menu>
         <Menu text="Important" icon="graph"></Menu>
