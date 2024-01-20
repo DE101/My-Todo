@@ -9,7 +9,8 @@ export default function Settings() {
       <div className="notificationSettings">
         <h3>alert sound</h3>
         <p>pop up</p>
-        <p>Font size</p>
+        <p>Volume</p>
+        <p>Ring time duration</p>
       </div>
       <div></div>
     </div>
