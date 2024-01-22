@@ -39,6 +39,7 @@ li {
 .main-container {
   width: var(--main-section-width);
   padding: 0px 20px;
+
 }
 
 .done {
@@ -84,14 +85,14 @@ button:active {
   height: 100vh;
   width: var(--sidebar-right-width);
   border-left: 1px solid #e4e4e4;
-  padding: 24px 0px;
+  padding: 10px 20px;
 }
 
 .left-side-nav {
   height: 100vh;
   width: var(--nav-wide-width);
   border-right: 1px solid #e4e4e4;
-  padding: 24px 0px;
+  padding: 10px 10px;
 }
 .small-screen {
   font-size: 17px;
