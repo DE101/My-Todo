@@ -10,7 +10,7 @@ function Todo ({ item, iterationKey, toggle}) {
                  onChange={() => {
                     toggle(iterationKey);
                 }} /> 
-                {item.todoText};
+                {item.todoText}
                 </li>
             );
 }
