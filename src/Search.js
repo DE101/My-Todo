@@ -18,7 +18,7 @@ export default function SearchBar() {
 
     return(
         <div className="search-bar">
-            <input type="text" placeholder="search task here" />
+            <input className="inputText" type="text" placeholder="search task here" />
             {/* <ul>
                 {filteredItems.map(value => <h1 key = {value.name}>{value.name}</h1>)}
             </ul> */}
