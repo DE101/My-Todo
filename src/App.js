@@ -41,7 +41,7 @@ function App() {
       <div className="main-container">
         <SearchBar></SearchBar>
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
-        <input ref={newTodoText} type="text" placeholder="new Todo"></input>
+        <input className="inputText" ref={newTodoText} type="text" placeholder="new Todo"></input>
         <button className="big-screen" onClick={handleSave}>
           Save Todo
         </button>
