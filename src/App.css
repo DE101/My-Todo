@@ -44,6 +44,14 @@ li {
 
 }
 
+.saveContainer {
+  margin-top: 50px;
+  padding: 3px;
+  background-color: #bfd1ff;
+  border-radius: 6px;
+  justify-items: center;
+}
+
 .done {
   color: green;
   text-decoration: line-through;
