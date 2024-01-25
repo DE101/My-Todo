@@ -17,7 +17,7 @@ body {
   background-color: #ffffff;
 }
 
-input {
+.inputText {
   border: 2px solid black;
   border-radius: 9px;
   padding: 10px;
@@ -45,23 +45,40 @@ li {
 }
 
 .saveContainer {
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 3px;
   background-color: #bfd1ff;
   border-radius: 6px;
   justify-items: center;
 }
 
+ul {
+  list-style: none;
+  padding: 10px;
+}
+ul > li {
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  color: white;
+  font-size: 20px;
+}
+ul > li:last-child {
+  border-bottom: 0;
+}
+
+.checkBox {
+  margin-right: 10px;
+}
 .done {
   color: green;
   text-decoration: line-through;
 }
 
-input:hover {
+.inputText:hover {
   border: 2px solid #3d3d3d;
   background-color: white;
 }
-input:active {
+.inputText:active {
   border: 2px solid rgb(113, 113, 113);
   background-color: white;
 }

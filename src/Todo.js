@@ -7,6 +7,7 @@ function Todo ({ item, iterationKey, toggle}) {
                 <input
                 key={iterationKey}
                  type="checkbox" 
+                 className="checkBox"
                  onChange={() => {
                     toggle(iterationKey);
                 }} /> 
