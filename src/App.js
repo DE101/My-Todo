@@ -31,11 +31,11 @@ function App() {
   return (
     <div className="container">
       <div className="left-side-nav">
-        <Menu text="User Profile" icon="profile"></Menu>
+        <Menu text="User Profile" icon="Account_circle"></Menu>
         <Menu text="Home" icon="house"></Menu>
         <Menu text="My Day" icon="sunny"></Menu>
-        <Menu text="All" icon="pile"></Menu>
-        <Menu text="Important" icon="graph"></Menu>
+        <Menu text="All" icon="Database"></Menu>
+        <Menu text="Important" icon="Monitoring"></Menu>
         <Menu text="Others" icon="people"></Menu>
       </div>
       <div className="main-container">
@@ -52,8 +52,8 @@ function App() {
       </div>
       <div className="right-side-nav">
         <Details text="todo" icon="task"></Details>
-        <Details text="time" icon="clock"></Details>
-        <Details text="assigned" icon="graph"></Details>
+        <Details text="time" icon="Schedule"></Details>
+        <Details text="assigned" icon="person_raised_hand"></Details>
         <Details text="todo" icon="task"></Details>
         <Details text="todo" icon="task"></Details>
 
