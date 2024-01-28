@@ -130,6 +130,12 @@ button:active {
   margin: auto;
 }
 
+.nav-item, .details {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+}
+
 @media (max-width: 750px){
   .big-screen {
     display: none;
