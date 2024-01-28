@@ -134,7 +134,10 @@ button:active {
   display: flex;
   justify-items: center;
   gap: 10px;
+
 }
+
+
 
 @media (max-width: 750px){
   .big-screen {
