@@ -62,7 +62,6 @@ function App() {
       <Routes>
         <Route path="/"></Route>
         <Route path="/Myday"></Route>
-        {/* <Route path="/UserProfile" Component={UserProfile}></Route> */}
         <Route path="/SignUp"></Route>
         <Route path="/Calendar"></Route>
         <Route path="/Settings"></Route>
