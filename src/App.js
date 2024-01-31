@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
@@ -39,6 +39,11 @@ function App() {
         <Menu text="Others" icon="people"></Menu>
       </div>
       <div className="main-container">
+        <BrowserRouter>
+        <Routes>
+          <Route></Route>
+        </Routes>
+        </BrowserRouter>
         <SearchBar></SearchBar>
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
         <input className="inputText" ref={newTodoText} type="text" placeholder="new Todo"></input>
