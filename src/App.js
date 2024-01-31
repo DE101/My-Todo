@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
@@ -39,11 +39,11 @@ function App() {
       </div>
       <div className="main-container">
       <SearchBar></SearchBar>
-        <BrowserRouter>
+        
         <Routes>
-          <Route path="/All" Component={TodoList}></Route>
+          <Route path="/All" element={TodoList}></Route>
         </Routes>
-        </BrowserRouter>
+        
         
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
         <input className="inputText" ref={newTodoText} type="text" placeholder="new Todo"></input>
@@ -64,15 +64,7 @@ function App() {
 
 
       </div>
-      <Routes>
-        <Route path="/"></Route>
-        <Route path="/Myday"></Route>
-        <Route path="/SignUp"></Route>
-        <Route path="/Calendar"></Route>
-        <Route path="/Settings"></Route>
-        <Route path="/Assigned"></Route>
-        <Route path="/Important"></Route>
-      </Routes>
+
     </div>
   );
 }
