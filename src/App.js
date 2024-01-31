@@ -32,19 +32,19 @@ function App() {
     <div className="container">
       <div className="left-side-nav">
         <Menu text="User Profile" icon="Account_circle"></Menu>
-        <Menu text="Home" icon="house"></Menu>
         <Menu text="My Day" icon="sunny"></Menu>
         <Menu text="All" icon="Database"></Menu>
         <Menu text="Important" icon="Monitoring"></Menu>
         <Menu text="Others" icon="people"></Menu>
       </div>
       <div className="main-container">
+      <SearchBar></SearchBar>
         <BrowserRouter>
         <Routes>
-          <Route></Route>
+          <Route path="/All" Component={TodoList}></Route>
         </Routes>
         </BrowserRouter>
-        <SearchBar></SearchBar>
+        
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
         <input className="inputText" ref={newTodoText} type="text" placeholder="new Todo"></input>
         <button className="big-screen" onClick={handleSave}>
