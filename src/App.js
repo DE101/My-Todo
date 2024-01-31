@@ -1,13 +1,12 @@
 import "./App.css";
 import React, { useState, useRef } from "react";
 import TodoList from "./TodoList";
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
 import Settings from "./Settings";
 // import { UserProfile } from "./UserProfile";
-
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -38,21 +37,26 @@ function App() {
         <Menu text="Others" icon="people"></Menu>
       </div>
       <div className="main-container">
-      <SearchBar></SearchBar>
-        
+        <SearchBar></SearchBar>
+
         <Routes>
           <Route path="/All" element={TodoList}></Route>
         </Routes>
-        
-        
+
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
-        <input className="inputText" ref={newTodoText} type="text" placeholder="new Todo"></input>
+        <input
+          className="inputText"
+          ref={newTodoText}
+          type="text"
+          placeholder="new Todo"
+        ></input>
         <button className="big-screen" onClick={handleSave}>
           Save Todo
         </button>
         <button className="small-screen" onClick={handleSave}>
           +
         </button>
+        
         <Settings></Settings>
       </div>
       <div className="right-side-nav">
@@ -61,10 +65,7 @@ function App() {
         <Details text="assigned" icon="person_raised_hand"></Details>
         <Details text="todo" icon="task"></Details>
         <Details text="todo" icon="task"></Details>
-
-
       </div>
-
     </div>
   );
 }
