@@ -130,13 +130,23 @@ button:active {
   margin: auto;
 }
 
-.nav-item, .details {
+nav a , .details {
   display: flex;
   justify-items: center;
   gap: 10px;
-
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
 }
 
+nav a:hover {
+  background-color: #8eb4ea;
+}
+
+nav a:active {
+  background-color: #709cda;
+}
 
 
 @media (max-width: 750px){

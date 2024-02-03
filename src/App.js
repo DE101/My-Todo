@@ -32,15 +32,16 @@ function App() {
       <div className="left-side-nav">
         <Menu text="User Profile" icon="Account_circle"></Menu>
         <Menu text="My Day" icon="sunny"></Menu>
-        <Menu text="All" icon="Database"></Menu>
+        <Menu text="All" icon="Database" to="/All"></Menu>
         <Menu text="Important" icon="Monitoring"></Menu>
-        <Menu text="Others" icon="people"></Menu>
+        <Menu text="Settings" icon="Settings" to="/Settings"></Menu>
       </div>
       <div className="main-container">
         <SearchBar></SearchBar>
 
         <Routes>
-          <Route path="/All" element={TodoList}></Route>
+          <Route path="/All" Component={TodoList}></Route>
+          <Route path="/Settings" Component={Settings}></Route>
         </Routes>
 
         <TodoList ItemList={todos} toggleTodo={handleToggle} />
@@ -57,7 +58,7 @@ function App() {
           +
         </button>
         
-        <Settings></Settings>
+        
       </div>
       <div className="right-side-nav">
         <Details text="todo" icon="task"></Details>
