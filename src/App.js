@@ -6,7 +6,9 @@ import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
 import Settings from "./Settings";
-// import { UserProfile } from "./UserProfile";
+import UserProfile from "./UserProfile";
+import Myday from "./Myday";
+import Important from "./Important";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -30,10 +32,10 @@ function App() {
   return (
     <div className="container">
       <div className="left-side-nav">
-        <Menu text="User Profile" icon="Account_circle"></Menu>
-        <Menu text="My Day" icon="sunny"></Menu>
+        <Menu text="User Profile" icon="Account_circle" to="/UserProfile"></Menu>
+        <Menu text="My Day" icon="sunny" to="/MyDay"></Menu>
         <Menu text="All" icon="Database" to="/All"></Menu>
-        <Menu text="Important" icon="Monitoring"></Menu>
+        <Menu text="Important" icon="Monitoring" to="/Important"></Menu>
         <Menu text="Settings" icon="Settings" to="/Settings"></Menu>
       </div>
       <div className="main-container">
@@ -41,6 +43,9 @@ function App() {
 
         <Routes>
           <Route path="/All" Component={TodoList}></Route>
+          <Route path="/MyDay" Component={Myday}></Route>
+          <Route path="/Important" Component={Important}></Route>
+          <Route path="/UserProfile" Component={UserProfile}></Route>
           <Route path="/Settings" Component={Settings}></Route>
         </Routes>
 
