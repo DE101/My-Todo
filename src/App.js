@@ -1,7 +1,7 @@
 import "./App.css";
-import React, { useState, useRef } from "react";
-import TodoList from "./TodoList";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
+import TodoMaker from "./TodoMaker";
 import SearchBar from "./Search";
 import Menu from "./Menu";
 import Details from "./Details";
@@ -11,23 +11,6 @@ import Myday from "./Myday";
 import Important from "./Important";
 
 function App() {
-  const [todos, setTodos] = useState([]);
-  // hook in react
-  const newTodoText = useRef();
-
-  function handleSave() {
-    const todoText = newTodoText.current.value;
-    if (todoText === "") return;
-    const newTodo = [...todos, { todoText, done: false }];
-    setTodos(newTodo);
-  }
-
-  function handleToggle(index) {
-    console.log(index);
-    const newTodos = [...todos];
-    newTodos[index].done = !newTodos[index].done;
-    setTodos(newTodos);
-  }
 
   return (
     <div className="container">
@@ -42,26 +25,12 @@ function App() {
         <SearchBar></SearchBar>
 
         <Routes>
-          <Route path="/All" Component={TodoList}></Route>
+          <Route path="/All" Component={TodoMaker}></Route>
           <Route path="/MyDay" Component={Myday}></Route>
           <Route path="/Important" Component={Important}></Route>
           <Route path="/UserProfile" Component={UserProfile}></Route>
           <Route path="/Settings" Component={Settings}></Route>
         </Routes>
-
-        <TodoList ItemList={todos} toggleTodo={handleToggle} />
-        <input
-          className="inputText"
-          ref={newTodoText}
-          type="text"
-          placeholder="new Todo"
-        ></input>
-        <button className="big-screen" onClick={handleSave}>
-          Save Todo
-        </button>
-        <button className="small-screen" onClick={handleSave}>
-          +
-        </button>
         
         
       </div>
