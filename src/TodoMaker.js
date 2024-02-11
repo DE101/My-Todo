@@ -15,6 +15,11 @@ function TodoMaker() {
     newTodoText.current.value = '';
   }
 
+  function handleDelete(index) {
+    const newTodos = todos.filter((todo) => todo.index !== index);
+    setTodos(newTodos);
+  }
+
   function handleToggle(index) {
     console.log(index);
     const newTodos = [...todos];
@@ -33,11 +38,17 @@ function TodoMaker() {
     return () => {
       document.removeEventListener('keydown', keyDownHandler);
     };
+
+    
   })
+
+  useEffect (()=> {
+    localStorage.setItem('lists', JSON.stringify(todos));
+  }, [todos])
 
   return (
     <div>
-      <TodoList ItemList={todos} toggleTodo={handleToggle} />
+      <TodoList ItemList={todos} toggleTodo={handleToggle} removeTodo={handleDelete} />
       <input
         className="inputText"
         ref={newTodoText}
