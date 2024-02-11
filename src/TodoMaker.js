@@ -16,7 +16,7 @@ function TodoMaker() {
   }
 
   function handleDelete(index) {
-    const newTodos = todos.filter((todo) => todo.index !== index);
+    const newTodos = todos.filter((todo, todoIndex) => todoIndex !== index);
     setTodos(newTodos);
   }
 
