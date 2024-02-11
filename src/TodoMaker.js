@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
 import TodoList from "./TodoList";
 import "./App.css";
 
@@ -19,6 +20,19 @@ function TodoMaker() {
     newTodos[index].done = !newTodos[index].done;
     setTodos(newTodos);
   }
+  useEffect (()=> {
+    const keyDownHandler = event => {
+      console.log('User pressed', event.key);
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        handleSave();
+      }
+    };
+    document.addEventListener('keydown', keyDownHandler);
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  })
 
   return (
     <div>
