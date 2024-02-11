@@ -12,6 +12,7 @@ function TodoMaker() {
     if (todoText === "") return;
     const newTodo = [...todos, { todoText, done: false }];
     setTodos(newTodo);
+    newTodoText.current.value = '';
   }
 
   function handleToggle(index) {
