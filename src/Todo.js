@@ -13,6 +13,7 @@ function Todo ({ item, iterationKey, toggle, remove}) {
                     toggle(iterationKey);
                 }} /> 
                 {item.todoText}
+                <br></br>
                 <button onClick={() => {
                     remove(iterationKey)}}><span className="material-symbols-outlined icon">delete</span></button>
                 </li>
