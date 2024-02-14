@@ -20,6 +20,9 @@ function Todo({ item, iterationKey, toggle, remove }) {
           toggle(iterationKey);
         }}
       />
+      <input
+      type="radio"
+      />
       {item.todoText}
       <br></br>
       <button
