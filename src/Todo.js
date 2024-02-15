@@ -4,7 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./App.css";
 import { useState } from "react";
 
-function Todo({ item, iterationKey, toggle, remove }) {
+function Todo({ item, iterationKey, toggle, remove, important }) {
   const [selectedDate, setselectedDate] = useState(null);
 
   const handleDateChange = (date) => {
@@ -21,7 +21,10 @@ function Todo({ item, iterationKey, toggle, remove }) {
         }}
       />
       <input
-      type="radio"
+        type="radio"
+        onChange={() => {
+          important(iterationKey);
+        }}
       />
       {item.todoText}
       <br></br>
