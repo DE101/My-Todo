@@ -11,7 +11,7 @@ function Todo({ item, iterationKey, toggle, remove, important }) {
     setselectedDate(date);
   };
   return (
-    <li className={item.done ? "done" : ""} key={iterationKey}>
+    <li className={item.done ? "done" : ""} value = {iterationKey} key={iterationKey}>
       <input
         key={iterationKey}
         type="checkbox"
@@ -21,6 +21,7 @@ function Todo({ item, iterationKey, toggle, remove, important }) {
         }}
       />
       <input
+      className="radio"
         type="radio"
         onChange={() => {
           important(iterationKey);
