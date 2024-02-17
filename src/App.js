@@ -26,7 +26,7 @@ function App() {
 
         <Routes>
           <Route path="/All" Component={TodoMaker}></Route>
-          <Route path="/MyDay" Component={Myday}></Route>
+          <Route path="/" Component={Myday}></Route>
           <Route path="/Important" Component={Important}></Route>
           <Route path="/UserProfile" Component={UserProfile}></Route>
           <Route path="/Settings" Component={Settings}></Route>
