@@ -40,6 +40,10 @@ function ImportantTodos() {
           removeTodo={handleDelete}
           importantTodo={handleImportant}
         />
+        <input
+        type="text"
+        // onChange={}
+        />
       </div>
     );
   }
