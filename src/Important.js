@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import TodoList from "./TodoList";
 
 
@@ -10,6 +10,20 @@ function ImportantTodos() {
         return [];
       }
     });
+
+    const newTodoText = useRef();
+    const importantTo = useRef();
+  
+    function handleSave() {
+      const todoText = newTodoText.current.value;
+      if (todoText === "") return;
+      const newTodo = [
+        ...todos,
+        { todoText, done: false, important: importantTo.current },
+      ];
+      setTodos(newTodo);
+      newTodoText.current.value = "";
+    }
   
     // Filter the todos to only include the important ones
     const importantTodos = todos.filter(todo => todo.important);
@@ -30,6 +44,20 @@ function ImportantTodos() {
       newTodos[index].important = !newTodos[index].important;
       setTodos(newTodos);
     }
+
+    useEffect(() => {
+      const keyDownHandler = (event) => {
+        console.log("User pressed", event.key);
+        if (event.key === "Enter") {
+          event.preventDefault();
+          handleSave();
+        }
+      };
+      document.addEventListener("keydown", keyDownHandler);
+      return () => {
+        document.removeEventListener("keydown", keyDownHandler);
+      };
+    });
   
     return (
       <div>
@@ -40,10 +68,18 @@ function ImportantTodos() {
           removeTodo={handleDelete}
           importantTodo={handleImportant}
         />
-        <input
+      <input
+        className="inputText"
+        ref={newTodoText}
         type="text"
-        // onChange={}
-        />
+        placeholder="new Todo"
+      ></input>
+      <button className="big-screen" onClick={handleSave}>
+        Save Todo
+      </button>
+      <button className="small-screen" onClick={handleSave}>
+        +
+      </button>
       </div>
     );
   }
