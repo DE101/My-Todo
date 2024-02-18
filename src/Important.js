@@ -12,17 +12,18 @@ function ImportantTodos() {
     });
 
     const newTodoText = useRef();
-    const importantTo = useRef();
+    // const importantTo = useRef();
   
     function handleSave() {
       const todoText = newTodoText.current.value;
       if (todoText === "") return;
       const newTodo = [
         ...todos,
-        { todoText, done: false, important: importantTo.current },
+        { todoText, done: false, important: true },
       ];
       setTodos(newTodo);
       newTodoText.current.value = "";
+      console.log (newTodo);
     }
   
     // Filter the todos to only include the important ones
@@ -58,6 +59,10 @@ function ImportantTodos() {
         document.removeEventListener("keydown", keyDownHandler);
       };
     });
+
+    useEffect(() => {
+      localStorage.setItem("lists", JSON.stringify(todos));
+    }, [todos]);
   
     return (
       <div>
