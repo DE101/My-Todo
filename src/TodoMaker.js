@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import TodoList from "./TodoList";
 import "./App.css";
 
@@ -14,6 +15,7 @@ function TodoMaker() {
   // hook in react
   const newTodoText = useRef();
   const importantTo = useRef();
+  const [selectedDate, setselectedDate] = useState(null);
 
   function handleSave() {
     const todoText = newTodoText.current.value;
@@ -43,6 +45,11 @@ function TodoMaker() {
     newTodos[index].important = !newTodos[index].important;
     setTodos(newTodos);
   }
+
+  const handleDateChange = (date) => {
+    setselectedDate(date);
+  };
+  
   useEffect(() => {
     const keyDownHandler = (event) => {
       console.log("User pressed", event.key);
@@ -68,6 +75,7 @@ function TodoMaker() {
         toggleTodo={handleToggle}
         removeTodo={handleDelete}
         importantTodo={handleImportant}
+        todoDate={handleDateChange}
       />
       <input
         className="inputText"
