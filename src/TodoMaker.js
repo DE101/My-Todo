@@ -74,7 +74,18 @@ function TodoMaker() {
         ref={newTodoText}
         type="text"
         placeholder="new Todo"
-      ></input>
+      >
+        
+        <DatePicker
+          className="datentime"
+          selected={selectedDate}
+          onChange={handleDateChange}
+          dateFormat="D/MM/YYYY - hh:mm"
+          showTimeSelect
+          timeIntervals={5}
+          timeFormat="hh:mm"
+        />
+      </input>
       <button className="big-screen" onClick={handleSave}>
         Save Todo
       </button>
