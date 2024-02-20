@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 // import { useState } from "react";
 
-function Todo({ item, iterationKey, toggle, remove, important, date }) {
+function Todo({ item, iterationKey, toggle, remove, important, selectedDate }) {
   // const [selectedDate, setselectedDate] = useState(null);
 
   return (
@@ -23,13 +23,14 @@ function Todo({ item, iterationKey, toggle, remove, important, date }) {
       {item.todoText}
 
       <input
-        className="radio"
-        type="radio"
+        className="checkbox1"
+        type="checkbox"
         onChange={() => {
           important(iterationKey);
         }}
       />
       <br></br>
+      {selectedDate && selectedDate.toString(iterationKey)}
       <button
         onClick={() => {
           remove(iterationKey);
@@ -37,7 +38,7 @@ function Todo({ item, iterationKey, toggle, remove, important, date }) {
       >
         <span className="material-symbols-outlined icon">delete</span>
       </button>
-      {date}
+      
     </li>
   );
 }

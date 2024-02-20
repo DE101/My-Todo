@@ -6,9 +6,8 @@
 
 :root {
   --nav-wide-width: 180px;
-  --sidebar-right-width: 180px;
   --main-section-width: calc(
-    100% - var(--nav-wide-width) - var(--sidebar-right-width)
+    100% - var(--nav-wide-width)
   );
 }
 
@@ -108,12 +107,6 @@ button:active {
 }
 
 
-.right-side-nav {
-  height: 100vh;
-  width: var(--sidebar-right-width);
-  border-left: 1px solid #e4e4e4;
-  padding: 10px 20px;
-}
 
 .left-side-nav {
   height: 100vh;

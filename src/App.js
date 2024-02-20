@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import TodoMaker from "./TodoMaker";
 import SearchBar from "./Search";
 import Menu from "./Menu";
-import Details from "./Details";
 import Settings from "./Settings";
 import UserProfile from "./UserProfile";
 import Myday from "./Myday";
@@ -33,13 +32,6 @@ function App() {
         </Routes>
         
         
-      </div>
-      <div className="right-side-nav">
-        <Details text="todo" icon="task"></Details>
-        <Details text="time" icon="Schedule"></Details>
-        <Details text="assigned" icon="person_raised_hand"></Details>
-        <Details text="todo" icon="task"></Details>
-        <Details text="todo" icon="task"></Details>
       </div>
     </div>
   );

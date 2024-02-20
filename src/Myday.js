@@ -1,13 +1,29 @@
 // import App from "./App";
 
 export default function Myday() {
-    return (
-        <div>
-            <p>Tasks of the day</p>
-            <div className="details">
-            <span className="material-symbols-outlined icon">{props.icon}</span>
-            <span className="description-text">{props.text}</span>
-            </div>
-        </div>
-    );
-};
+  return (
+    <div>
+      <h1>Tasks of the day</h1>
+      <div className="details">
+        <span className="material-symbols-outlined icon">task</span>
+        <span className="description-text">todo</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">task</span>
+        <span className="description-text">todo</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">task</span>
+        <span className="description-text">todo</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">task</span>
+        <span className="description-text">todo</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">task</span>
+        <span className="description-text">todo</span>
+      </div>
+    </div>
+  );
+}
