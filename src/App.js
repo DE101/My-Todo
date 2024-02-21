@@ -6,7 +6,7 @@ import SearchBar from "./Search";
 import Menu from "./Menu";
 import Settings from "./Settings";
 import UserProfile from "./UserProfile";
-import Myday from "./Myday";
+import MyDay from "./Myday";
 import Important from "./Important";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
         <Routes>
           <Route path="/All" Component={TodoMaker}></Route>
-          <Route path="/" Component={Myday}></Route>
+          <Route path="/" Component={MyDay}></Route>
           <Route path="/Important" Component={Important}></Route>
           <Route path="/UserProfile" Component={UserProfile}></Route>
           <Route path="/Settings" Component={Settings}></Route>
