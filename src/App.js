@@ -15,7 +15,7 @@ function App() {
     <div className="container">
       <div className="left-side-nav">
         <Menu text="User Profile" icon="Account_circle" to="/UserProfile"></Menu>
-        <Menu text="My Day" icon="sunny" to="/MyDay"></Menu>
+        <Menu text="My Day" icon="sunny" to="/"></Menu>
         <Menu text="All" icon="Database" to="/All"></Menu>
         <Menu text="Important" icon="Monitoring" to="/Important"></Menu>
         <Menu text="Settings" icon="Settings" to="/Settings"></Menu>
