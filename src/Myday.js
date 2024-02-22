@@ -87,25 +87,27 @@ const todaysTodos = todos.filter((todo) => todo.date === today);
       <button className="small-screen" onClick={handleSave}>
         +
       </button>
+      <div className="detailsContainer">
       <div className="details">
         <span className="material-symbols-outlined icon">task</span>
         <span className="description-text">todo</span>
       </div>
       <div className="details">
-        <span className="material-symbols-outlined icon">task</span>
+        <span className="material-symbols-outlined icon">calendar</span>
+        <span className="description-text">date</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">clock</span>
+        <span className="description-text">time</span>
+      </div>
+      <div className="details">
+        <span className="material-symbols-outlined icon">status</span>
         <span className="description-text">todo</span>
       </div>
       <div className="details">
-        <span className="material-symbols-outlined icon">task</span>
+        <span className="material-symbols-outlined icon">important</span>
         <span className="description-text">todo</span>
       </div>
-      <div className="details">
-        <span className="material-symbols-outlined icon">task</span>
-        <span className="description-text">todo</span>
-      </div>
-      <div className="details">
-        <span className="material-symbols-outlined icon">task</span>
-        <span className="description-text">todo</span>
       </div>
     </div>
   );
