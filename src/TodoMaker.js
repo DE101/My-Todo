@@ -52,7 +52,7 @@ function TodoMaker() {
   // };
 
   function handleDateChange(index, date) {
-    setselectedDate();
+    setselectedDate(date);
     const newTodos = [...todos];
     newTodos[index].selectedDate = date;
     setTodos(newTodos);
@@ -97,7 +97,7 @@ function TodoMaker() {
         <DatePicker
           className="datentime"
           selected={selectedDate}
-          onChange={handleDateChange}
+          onChange={(date) => handleDateChange(date)}
           dateFormat="D/MM/YYYY - hh:mm"
           showTimeSelect
           timeIntervals={5}
