@@ -11,7 +11,7 @@ function TodoMaker() {
     } else {
       return [];
     }
-  })
+  });
   // hook in react
   const newTodoText = useRef();
   const importantTo = useRef();
@@ -57,7 +57,7 @@ function TodoMaker() {
     newTodos[index].selectedDate = date;
     setTodos(newTodos);
   }
-  
+
   useEffect(() => {
     const keyDownHandler = (event) => {
       console.log("User pressed", event.key);
@@ -86,14 +86,15 @@ function TodoMaker() {
         todoDate={handleDateChange}
         selectedDate={selectedDate}
       />
-      <input
-        className="inputText"
-        ref={newTodoText}
-        type="text"
-        placeholder="new Todo"
-      >
-      </input>
-      <DatePicker
+      <div className="todoInputContainer">
+        <input
+          className="inputText"
+          ref={newTodoText}
+          type="text"
+          placeholder="new Todo"
+        >
+        </input>
+        <DatePicker
           className="datentime"
           selected={selectedDate}
           onChange={handleDateChange}
@@ -102,6 +103,7 @@ function TodoMaker() {
           timeIntervals={5}
           timeFormat="hh:mm"
         />
+      </div>
       <button className="big-screen" onClick={handleSave}>
         Save Todo
       </button>
