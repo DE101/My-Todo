@@ -27,6 +27,7 @@ function TodoMaker() {
 
     setTodos(newTodo);
     newTodoText.current.value = "";
+    setselectedDate(new Date())
   }
 
   function handleDelete(index) {
@@ -52,10 +53,11 @@ function TodoMaker() {
   // };
 
   function handleDateChange(index, date) {
-    setselectedDate(date);
     const newTodos = [...todos];
-    newTodos[index].selectedDate = date;
-    setTodos(newTodos);
+    if (newTodos[index]) {
+      newTodos[index].selectedDate = date;
+      setTodos(newTodos);
+    }
   }
 
   useEffect(() => {
@@ -96,10 +98,12 @@ function TodoMaker() {
         </input>
         <DatePicker
           className="datentime"
+          // ref={newTodoDate}
           selected={selectedDate}
-          onChange={(date) => handleDateChange(date)}
-          dateFormat="D/MM/YYYY - hh:mm"
+          onChange={handleDateChange}
+          index={todos.index}
           showTimeSelect
+          dateFormat="DD/MM/YYYY - hh:mm"
           timeIntervals={5}
           timeFormat="hh:mm"
         />

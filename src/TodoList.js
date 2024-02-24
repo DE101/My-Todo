@@ -8,7 +8,7 @@ function TodoList({ ItemList, toggleTodo, removeTodo,importantTodo, todoDate, se
     <div className="saveContainer">
       <ul>
         {ItemList.map((todo, index) => (
-          <Todo item={todo} iterationKey={index} toggle={toggleTodo} remove={removeTodo} important={importantTodo} selectedDate={selectedDate} toDate={todoDate}/>
+          <Todo item={todo} iterationKey={index} toggle={toggleTodo} remove={removeTodo} important={importantTodo} i={selectedDate} toDate={todoDate}/>
         ))}
       </ul>
     </div>

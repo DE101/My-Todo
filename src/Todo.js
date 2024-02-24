@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 // import { useState } from "react";
 
-function Todo({ item, iterationKey, toggle, remove, important, selectedDate }) {
+function Todo({ item, iterationKey, toggle, remove, important }) {
   // const [selectedDate, setselectedDate] = useState(null);
 
   return (
@@ -30,7 +30,7 @@ function Todo({ item, iterationKey, toggle, remove, important, selectedDate }) {
         }}
       />
       <br></br>
-      {selectedDate && selectedDate.toString(iterationKey)}
+      {item.date && new Date(item.date).toString()}
       <button
         onClick={() => {
           remove(iterationKey);
